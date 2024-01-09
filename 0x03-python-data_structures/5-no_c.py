@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    new = ""
-    for i in my_string:
-        if i is not 'c' and i is not 'C':
-            new += i
-    return new
+    listofchars = list(my_string)
+    for char in listofchars:
+        if char == 'c' or char == 'C':
+            listofchars.remove(char)
+    return("".join(listofchars))
